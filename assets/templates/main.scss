@@ -1,0 +1,22 @@
+@import "./../bem/reset.css";
+@import "./../fonts/museo/museo";
+
+$gg: yellow;
+$rr: purple;
+
+body {
+    background-color: $gg;
+    font-family: Museo, sans-serif;
+    h1 {
+        color: $rr;
+    }
+}
+
+@keyframes gg {
+    from {
+        color: $gg;
+    }
+    to {
+        color: $rr;
+    }
+}
