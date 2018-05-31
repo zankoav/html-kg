@@ -1,4 +1,26 @@
-// Webpack v4
+/**
+ *   Webpack v4
+ 1. npm --version
+ 2. npm init -y
+ 3. npm install webpack webpack-cli --save-dev
+ 4. npm install babel-core babel-loader babel-preset-env --save-dev
+ 5. nano .babelrc
+ {
+     "presets": [
+        "env"
+      ]
+ }
+ 6. npm install extract-text-webpack-plugin@next --save-dev
+ 7. npm install style-loader css-loader --save-dev
+ 8. npm install node-sass sass-loader --save-dev
+ 9. npm install postcss-loader autoprefixer --save-dev
+ 10. npm install resolve-url-loader --save-dev
+ 11. npm install file-loader --save-dev
+ 12. npm install assets-webpack-plugin --save-dev
+ 13. npm install webpack-dev-server --save-dev
+ *
+ */
+
 const NODE_ENV = process.env.NODE_ENV;
 const DEV_MODE = NODE_ENV === 'development';
 
@@ -8,15 +30,39 @@ const AssetsPlugin = require('assets-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const rimraf = require('rimraf');
 
+let entries = {
+    index: './index.js',
+    houses: './houses.js',
+    booking: './booking.js',
+    events: './events.js',
+    house: './house.js',
+    opportunities: './opportunities.js'
+};
 
 module.exports = {
-    entry: {main: './assets/templates/main.js'},
+    context: path.resolve(__dirname, 'assets/templates'),
+    entry: entries,
     output: {
         path: path.resolve(__dirname, 'src'),
         publicPath: '/src/',
         filename: 'js/[name]' + (DEV_MODE ? '.js' : '.[hash].min.js'),
-        chunkFilename: '[id]' + (DEV_MODE ? '.js' : '.[hash].min.js'),
+        chunkFilename: 'js/[name]' + (DEV_MODE ? '.js' : '.[hash].min.js'),
         library: '[name]',
+    },
+    optimization: {
+        runtimeChunk: {name: 'common'},
+        splitChunks: {
+            cacheGroups: {
+                default: false,
+                commons: {
+                    test: /\.(js|scss)$/,
+                    chunks: 'all',
+                    minChunks: 2,
+                    name: 'common',
+                    enforce: true,
+                },
+            },
+        },
     },
     devtool: DEV_MODE ? 'source-map' : false,
     devServer: {
@@ -48,7 +94,7 @@ module.exports = {
                         options: {
                             plugins: [
                                 autoprefixer({
-                                    browsers: ['ie >= 8', 'last 4 version']
+                                    browsers: ['ie >= 10', 'last 3 version']
                                 })
                             ],
                             sourceMap: true
