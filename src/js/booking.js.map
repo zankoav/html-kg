@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://[name]/./booking.js"],"names":["__webpack_require__","console","log"],"mappings":"gHAAAA,EAAA,GAEAC,QAAQC,IAAI","file":"js/booking.js","sourcesContent":["import \"./../bem/_base.scss\";\n\nconsole.log('booking');"],"sourceRoot":""}

@@ -1,7 +1,7 @@
 {
   "name": "html-kg",
   "version": "1.0.0",
-  "description": "",
+  "description": "website krasnagorka.by",
   "scripts": {
     "build": "NODE_ENV=production webpack --mode production",
     "preprod": "NODE_ENV=development webpack --mode production",

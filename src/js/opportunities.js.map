@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://[name]/./opportunities.js"],"names":["__webpack_require__","console","log"],"mappings":"qHAAAA,EAAA,GAEAC,QAAQC,IAAI","file":"js/opportunities.js","sourcesContent":["import \"./../bem/_base.scss\";\n\nconsole.log('opportunities');\n"],"sourceRoot":""}
