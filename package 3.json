@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "build": "NODE_ENV=production webpack --mode production",
+    "preprod": "NODE_ENV=development webpack --mode production",
     "dev": "NODE_ENV=development webpack-dev-server --open --mode development"
   },
   "repository": {
