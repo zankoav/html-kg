@@ -1,0 +1,34 @@
+@import "./../constants";
+
+.contacts-menu {
+
+    line-height: 0;
+
+    &__container {
+        display: none;
+    }
+
+    &__button {
+        width: $SIZE-BUTTON;
+        height: $SIZE-BUTTON;
+        cursor: pointer;
+    }
+}
+@media (min-width: 1024px) {
+    .contacts-menu {
+
+        &__dark-glass {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+@media (min-width: 1280px) {
+
+    .contacts-menu {
+
+        &__button {
+            width: $SIZE-BUTTON-S;
+            height: $SIZE-BUTTON-S;
+        }
+    }
+}

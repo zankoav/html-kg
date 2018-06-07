@@ -75,7 +75,7 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
+                exclude: /node_modules\/(?!(dom7|ssr-window|swiper)\/).*/,
                 use: {
                     loader: "babel-loader"
                 }
@@ -119,7 +119,7 @@ module.exports = {
                                 options: {
                                     plugins: [
                                         autoprefixer({
-                                            browsers: ['ie >= 8', 'last 4 version']
+                                            browsers: ['ie >= 10', 'last 3 version']
                                         })
                                     ],
                                     sourceMap: true

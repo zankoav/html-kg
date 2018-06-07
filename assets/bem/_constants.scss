@@ -1,0 +1,68 @@
+$BLUE-LIGHT: #23C4F5;
+$BLUE: #1498C6;
+$BLUE-DARK: #1C95BA;
+$GREEN: #7ED321;
+$RED: #D0021B;
+$WHITE: #FFF;
+$LIGHT: #F7F7F7;
+$DARK-LIGHT: #D8D8D8;
+$DARK: #4A4A4A;
+$DARK-90: #101010;
+$BLACK: #000;
+
+$MAX-WIDTH: 1200px;
+$MAX-CONTACTS-WINDOW: 260px;
+
+$WIDTH-MENU-WINDOW: 360px;
+
+$SIZE-BUTTON: 44px;
+$SIZE-BUTTON-S: 26px;
+
+@mixin glass {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+@mixin title {
+
+    text-transform: uppercase;
+    font-family: Avenir_Next_Bold, sans-serif;
+    color: $DARK;
+    font-size: 24px;
+
+    &:after, &:before {
+        content: '/';
+        color: $GREEN;
+        padding-right: 6px;
+    }
+
+    &:after {
+        padding-left: 6px;
+    }
+}
+
+@mixin button {
+    text-decoration: none;
+    border-radius: 6px;
+    padding: .7rem 1rem;
+    background-color: $RED;
+    color: $WHITE;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba($BLACK, .5);
+    transition: all .4s;
+
+    &:hover {
+        background-color: $BLUE-LIGHT;
+    }
+
+    &:active{
+        background-color: $BLUE-DARK;
+    }
+}

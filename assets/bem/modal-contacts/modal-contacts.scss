@@ -1,0 +1,97 @@
+@import "./../constants";
+
+.modal-contacts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__dark-glass {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    &__button {
+        width: $SIZE-BUTTON;
+        height: $SIZE-BUTTON;
+        cursor: pointer;
+        position: absolute;
+        top: -$SIZE-BUTTON*1.5;
+        right: 0;
+    }
+
+    &__wrapper {
+        background-color: $WHITE;
+        color: $DARK;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px $DARK-90;
+        width: 100%;
+        max-width: $MAX-CONTACTS-WINDOW;
+        position: relative;
+        padding: 1.25rem;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &__sub-title{
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+    }
+
+    &__email{
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:{
+            top: 1px solid $DARK;
+            bottom: 1px solid $DARK;
+        }
+    }
+
+    &__working-time{
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__working-time-after{
+        margin-top: .25rem;
+    }
+
+    &__icon{
+        width: 20px;
+        margin-right: 6px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-contacts {
+        &__wrapper{
+            padding: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .modal-contacts {
+
+        &__button {
+            top: -$SIZE-BUTTON-S*1.5;
+            width: $SIZE-BUTTON-S;
+            height: $SIZE-BUTTON-S;
+        }
+    }
+}
