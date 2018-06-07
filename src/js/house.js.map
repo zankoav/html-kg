@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://[name]/./house.js"],"names":["__webpack_require__","console","log"],"mappings":"8GAAAA,EAAA,GAEAC,QAAQC,IAAI","file":"js/house.js","sourcesContent":["import \"./../bem/_base.scss\";\n\nconsole.log('house');\n"],"sourceRoot":""}

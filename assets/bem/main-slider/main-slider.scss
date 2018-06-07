@@ -1,0 +1,154 @@
+@import './../../../node_modules/swiper/dist/css/swiper.min.css';
+@import "./../constants";
+
+.main-slider {
+    position: absolute !important;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    &__next-prev {
+        position: absolute;
+        width: 100%;
+        top:0;
+        height: 100vh;
+    }
+
+    &__next-prev-wrapper{
+        position: relative;
+        height: 100%;
+    }
+
+    &__slide-content {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        width: 100%;
+        padding: 30px;
+        color: $WHITE;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__slide-content-title {
+        font-family: Avenir_Next_Bold, sans-serif;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    &__slide-content-sub-title {
+        font-size: 22px;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    &__slide-content-button {
+        @include button;
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    &__slide-img-wrapper {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba($BLACK, .8), transparent, transparent);
+        }
+    }
+
+    &__slide-img {
+        position: relative;
+        height: 100%;
+        width: auto;
+        max-width: initial;
+    }
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 30%;
+}
+
+.swiper-pagination-bullet {
+    background: $DARK-LIGHT;
+    opacity: 1;
+    &:focus{
+        outline: none;
+    }
+    &-active {
+        background: $RED;
+    }
+}
+
+.swiper-button-next,.swiper-button-prev{
+    display: none;
+    background-size: contain;
+    height: 35px;
+    width: 17px;
+
+    &:focus{
+        outline: none;
+    }
+}
+.swiper-button-next{
+    background-image: url(./../../icons/right-arrow.svg);
+
+}
+.swiper-button-prev{
+    background-image: url(./../../icons/left-arrow.svg);
+}
+
+
+
+@media (min-width: 768px) {
+
+    .main-slider {
+
+        &__slide-content-button {
+
+            width: 33%;
+        }
+
+        &__slide-content-sub-title {
+            margin-bottom: 3rem;
+            margin-top: .5rem;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .swiper-button-next,.swiper-button-prev {
+        display: block;
+    }
+
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+        display: none;
+    }
+
+    .main-slider {
+
+        &__slide-content-button {
+            width: initial;
+            min-width: 170px;
+        }
+
+        &__slide-img {
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+
+

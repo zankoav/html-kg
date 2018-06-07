@@ -1,3 +1,33 @@
-@import "./../fonts/museo/museo";
+@import "./../fonts/AvenirNextCyr/stylesheet";
 @import "./constants";
 @import "./reset";
+
+body{
+    font-family: Avenir_Next_Regular, sans-serif;
+}
+
+.b-container {
+    margin: {
+        left: 30px ;
+        right: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .b-container {
+        margin: {
+            left: 66px;
+            right: 66px;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .b-container {
+        max-width: $MAX-WIDTH;
+        margin: {
+            left: auto;
+            right: auto;
+        }
+    }
+}

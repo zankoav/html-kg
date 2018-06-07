@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://[name]/./houses.js"],"names":["__webpack_require__","console","log"],"mappings":"+GAAAA,EAAA,GAEAC,QAAQC,IAAI","file":"js/houses.js","sourcesContent":["import \"./../bem/_base.scss\";\n\nconsole.log('houses');\n"],"sourceRoot":""}

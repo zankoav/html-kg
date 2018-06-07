@@ -1,0 +1,125 @@
+@import "./../constants";
+
+.menu-main{
+
+    &__button{
+        margin-top: 8px;
+        min-width: 42px;
+        max-width: 42px;
+        cursor: pointer;
+    }
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title{
+        @include title;
+    }
+
+    &__button-close{
+        width: $SIZE-BUTTON;
+        height: $SIZE-BUTTON;
+    }
+
+    &__wrapper{
+        display: none;
+        font-size: 18px;
+
+        &--mobile{
+            display: block;
+            padding: 30px;
+            background-color: $LIGHT;
+            position: fixed;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left:-100%;
+        }
+    }
+
+    &__glass{
+        @include glass;
+    }
+
+    &__currency{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    &__scroll-content{
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        margin-left: -15px;
+    }
+
+    &__scroll-content-wrapper{
+        position: absolute;
+        right: -15px;
+        padding-bottom: 2rem;
+        padding-right: 15px;
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    
+    
+}
+
+@media (min-width: 768px) {
+    .menu-main{
+        &__wrapper {
+
+            &--mobile {
+                width: $WIDTH-MENU-WINDOW;
+                padding: 60px;
+                left:-$WIDTH-MENU-WINDOW;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .menu-main{
+        &__button{
+            display: none;
+        }
+
+        &__header{
+            display: none;
+        }
+
+        &__wrapper{
+            &--mobile {
+                padding: initial;
+                background-color:initial;
+                position: initial;
+                width: initial;
+                height: initial;
+                top: initial;
+                left:initial;
+            }
+            display: block;
+        }
+
+        &__currency{
+            display: none;
+        }
+
+        &__scroll-content{
+            margin-left: initial;
+        }
+
+        &__scroll-content-wrapper{
+            position: initial;
+            padding-bottom: initial;
+            padding-right: initial;
+            overflow-y: initial;
+        }
+    }
+}
