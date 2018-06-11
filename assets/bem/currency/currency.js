@@ -7,17 +7,20 @@ $('.currency__item--selected').click(function () {
 
 $('.currency__item--list').click(function () {
     let $inner = $(this).html();
-    let $parent = $(this).parents('.currency');
-    $parent.find('.currency__item--selected').click().html($inner);
+    let $parents = $('.currency');
+    $parents.find('.currency__item--selected').html($inner);
+    $(this).parents('.currency').find('.currency__item--selected').click();
+
     let currency = $(this).data('currency');
-    $parent.find(':selected').removeAttr('selected');
-    let $newSelected = $parent.find(`option[name="${currency}"]`);
-    let quality = $newSelected.attr('value');
-    $newSelected.attr("selected", "selected");
+    let $parent = $(this).parents('.currency');
+    let quality = $parent.find(`option[name="${currency}"]`).attr('value');
+    $parents.find(':selected').removeAttr('selected');
+    $parents.find(`option[name="${currency}"]`).attr("selected", "selected");
+
     changeCurrency(currency, quality);
 });
 
-function changeCurrency(currency, quality){
+function changeCurrency(currency, quality) {
     console.log(currency + ", " + quality);
 }
 

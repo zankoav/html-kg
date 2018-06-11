@@ -137,16 +137,16 @@
 
 
 
-//@font-face {
-//	font-family: 'Avenir Next Cyr Ultra';
-//	src: url('AvenirNextCyr-UltraLight.eot');
-//	src: local('Avenir Next Cyr Ultra Light'), local('AvenirNextCyr-UltraLight'),
-//		url('AvenirNextCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
-//		url('AvenirNextCyr-UltraLight.woff') format('woff'),
-//		url('AvenirNextCyr-UltraLight.ttf') format('truetype');
-//	font-weight: 200;
-//	font-style: normal;
-//}
+@font-face {
+	font-family: 'Avenir_Next_UltraLight';
+	src: url('AvenirNextCyr-UltraLight.eot');
+	src: local('Avenir Next Cyr Ultra Light'), local('AvenirNextCyr-UltraLight'),
+		url('AvenirNextCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+		url('AvenirNextCyr-UltraLight.woff') format('woff'),
+		url('AvenirNextCyr-UltraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
 
 //@font-face {
 //	font-family: 'Avenir Next Cyr';

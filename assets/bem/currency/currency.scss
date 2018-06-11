@@ -64,6 +64,9 @@
     &__item--white {
         color: $WHITE;
         border-color: $WHITE;
+        &::after {
+            border-color: $WHITE transparent transparent;
+        }
     }
 
     &__item-flag {

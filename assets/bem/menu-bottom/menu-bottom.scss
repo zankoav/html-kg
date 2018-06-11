@@ -1,0 +1,104 @@
+@import "./../constants";
+
+.menu-bottom{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+        align-items: center;
+    }
+
+    &__left{
+        display: none;
+    }
+
+    &__right{
+        color: $WHITE;
+        display: flex;
+        font-size: 14px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__details{
+        display: flex;
+        align-items: center;
+    }
+
+    &__details-sunny{
+        text-align: center;
+        position: relative;
+        margin: 0 .5rem;
+    }
+
+    &__degrees{
+        font-family: Avenir_Next_UltraLight, sans-serif;
+        font-size: 36px;
+        margin-right: .5rem;
+
+        span{
+            font-family: Avenir_Next_UltraLight, sans-serif;
+        }
+    }
+
+    &__days{
+        display: flex;
+        align-items: end;
+        margin-top: .5rem;
+        justify-content: center;
+    }
+
+    &__day{
+        text-align: center;
+        margin: 0 .25rem;
+        align-self: center;
+    }
+
+    &__sunny-icon{
+        width: 48px;
+    }
+
+    &__day-icon{
+        width: 28px;
+    }
+
+    &__place{
+        text-transform: uppercase;
+    }
+
+    &__details-place{
+        align-self: flex-end;
+        b {
+            font-weight: bold;
+            margin-right: .5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-bottom{
+        &__left{
+            display: block;
+        }
+
+        &__right--wrapper{
+            display: flex;
+
+        }
+
+        &__days {
+            margin-top: initial;
+        }
+
+        &__right{
+            justify-content: initial;
+            width: initial;
+        }
+    }
+}
+
