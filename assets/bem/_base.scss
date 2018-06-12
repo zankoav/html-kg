@@ -2,28 +2,25 @@
 @import "./constants";
 @import "./reset";
 
-body{
+body {
     font-family: Avenir_Next_Regular, sans-serif;
+    background-color: $LIGHT;
 }
 
 .b-container {
     margin: {
-        left: 30px ;
+        left: 30px;
         right: 30px;
     }
-}
 
-@media (min-width: 768px) {
-    .b-container {
+    @media (min-width: map-get($MEDIA, SM)) {
         margin: {
             left: 66px;
             right: 66px;
         }
     }
-}
 
-@media (min-width: 1280px) {
-    .b-container {
+    @media (min-width: map-get($MEDIA, LG)) {
         max-width: $MAX-WIDTH;
         margin: {
             left: auto;

@@ -1,0 +1,2 @@
+
+import './main-slide.scss';

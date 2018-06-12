@@ -1,3 +1,3 @@
 import "./../bem/_base.scss";
-
-console.log('events');
+import "../bem/header-second/header-second";
+import './../bem/subtitle/subtitle';

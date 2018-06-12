@@ -1,0 +1,42 @@
+@import "./../constants";
+
+.basic-opportunities {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #6775A8;
+    margin: 0 auto;
+    padding: 1rem;
+    color: white;
+    @media (min-width: map-get($MEDIA, LG)) {
+        border-radius: .4rem;
+    }
+    &__item {
+        width: 50%;
+        text-align: center;
+        padding: 1.25rem;
+
+        @media (min-width: map-get($MEDIA, SM)) {
+            width: 33.333%;
+        }
+        @media (min-width: map-get($MEDIA, MD)) {
+            width: 25%;
+        }
+        @media (min-width: map-get($MEDIA, LG)) {
+            width: 16.6666%;
+            border-radius: .4rem;
+        }
+    }
+
+    &__image {
+        max-width: 64px;
+        max-height: 64px;
+        margin-bottom: .25rem;
+    }
+
+    &__text {
+        font-size: 14px;
+        @media (min-width: map-get($MEDIA, SM)) {
+            font-size: 18px;
+        }
+    }
+}

@@ -18,6 +18,12 @@ $WIDTH-MENU-WINDOW: 360px;
 $SIZE-BUTTON: 44px;
 $SIZE-BUTTON-S: 26px;
 
+$MEDIA: (
+        SM:768px,
+        MD:1024px,
+        LG:1280px
+);
+
 @mixin glass {
     display: none;
     position: fixed;
@@ -62,7 +68,7 @@ $SIZE-BUTTON-S: 26px;
         background-color: $BLUE-LIGHT;
     }
 
-    &:active{
+    &:active {
         background-color: $BLUE-DARK;
     }
 }

@@ -1,3 +1,4 @@
 import "./../bem/_base.scss";
-
-console.log('opportunities');
+import "../bem/header-second/header-second";
+import "./../bem/basic-opportunities/basic-opportunities";
+import './../bem/subtitle/subtitle';

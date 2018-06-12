@@ -1,0 +1,22 @@
+@import "./../constants";
+
+.subtitle {
+    padding: 1.75rem 0;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: $DARK;
+    font-family: Avenir_Next_Bold, sans-serif;
+    text-transform: uppercase;
+
+    &:after {
+        margin-left: .5rem;
+        color: $GREEN;
+        content: "/";
+
+    }
+    &:before {
+        margin-right: .5rem;
+        color: $GREEN;
+        content: "/";
+    }
+}
