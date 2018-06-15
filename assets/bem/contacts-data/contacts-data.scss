@@ -1,0 +1,48 @@
+@import "./../constants";
+
+
+.contacts-data{
+    color: $WHITE;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: map_get($MEDIA, MD)) {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    @media (min-width: map_get($MEDIA, LG)) {
+        flex-direction: column;
+        justify-content: initial;
+    }
+
+    &__first{
+        margin-bottom: 2rem;
+    }
+
+    &__item{
+        align-items: center;
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    &__item-icon{
+        margin-right: 1rem;
+        width: 20px;
+
+        &--top{
+            align-self: flex-start;
+        }
+    }
+
+    &__item-text-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item-text{
+        font-size: 14px;
+        line-height: 14px;
+    }
+}

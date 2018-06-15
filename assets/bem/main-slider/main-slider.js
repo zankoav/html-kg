@@ -1,7 +1,7 @@
 import './main-slider.scss';
 import Swiper from 'swiper';
 
-let swiper = new Swiper('.swiper-container', {
+let swiper = new Swiper('.main-slider', {
 
     navigation: {
         nextEl: '.swiper-button-next',
@@ -9,6 +9,6 @@ let swiper = new Swiper('.swiper-container', {
     },
     pagination: {
         el: '.swiper-pagination',
-        clickable: true,
+        clickable: false,
     }
 });

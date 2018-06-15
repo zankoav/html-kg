@@ -1,0 +1,126 @@
+@import "./../constants";
+
+$opportunity--border: (
+        b-red:$RED,
+        b-green:$GREEN,
+        b-purple:#9013FE,
+        b-lime:#F8CC1C,
+        b-blue:$BLUE,
+        b-aqua: $BLUE-LIGHT
+);
+
+.opportunity {
+    border-radius: 6px;
+    box-shadow: 0 2px 4px 0 rgba(#ABA9A9, .5);
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: $WHITE;
+    text-decoration: none;
+    transition: all .4s;
+    height: initial;
+
+
+    &__text{
+       padding: 1rem;
+        height: 60%;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            width: 60%;
+            flex: 1 0 60%;
+        }
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            width: 55%;
+            flex: 1 0 55%;
+        }
+    }
+
+    &__image-wrapper{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            width: 40%;
+            flex: 1 0 40%;
+            border-radius: 0 6px 6px 0;
+        }
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            width: 45%;
+            flex: 1 0 45%;
+        }
+
+    }
+
+    &__image{
+        height:100%;
+        width: 100%;
+        max-width: initial;
+        max-height: 250px;
+        @media (min-width: map_get($MEDIA, SM)) {
+            max-height:initial;
+            width: initial;
+        }
+    }
+
+    &__title{
+        font-family: Avenir_Next_Regular, sans-serif;
+        font-size: 18px;
+        font-weight: 900;
+        color: $DARK;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin:{
+            top: .5rem;
+            bottom: 1rem;
+        }
+    }
+
+    &__description{
+        font-size: 16px;
+        color: $DARK;
+        margin-bottom: 1.5rem;
+
+    }
+    
+    &__image-wrapper{
+        overflow: hidden;
+        border-radius: 6px 6px 0 0;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            border-radius: 0 6px 6px 0;
+        }
+    }
+
+    @each $name, $value in $opportunity--border {
+        &--#{$name} {
+            border-bottom: 8px solid $value;
+            @media (min-width: map_get($MEDIA, SM)) {
+                border-bottom: none;
+                border-left: 8px solid $value;
+            }
+        }
+    }
+
+    @media (min-width: map_get($MEDIA, SM)) {
+        flex-direction: row;
+        max-height: 200px;
+    }
+
+    @media (min-width: map_get($MEDIA, MD)) {
+        max-height: 230px;
+        width: calc(50% - .75rem);
+        overflow: hidden;
+        flex: 0 0 calc(50% - .75rem);
+    }
+
+    @media (min-width: map_get($MEDIA, LG)) {
+        max-height: 200px;
+        &:hover{
+            box-shadow: 0 4px 8px 0 rgba(#ABA9A9, 1);
+            transform: scale(1.025);
+        }
+    }
+}

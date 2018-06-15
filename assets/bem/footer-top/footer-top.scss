@@ -1,0 +1,91 @@
+@import "./../constants";
+
+.footer-top {
+    padding: 2rem 0;
+    background-color: #7C8CA7;
+
+    &__wrapper {
+        display: flex;
+        max-width: initial;
+        margin: {
+            left: -1rem;
+            right: -1rem;
+        }
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    &__form {
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            margin-left: 2rem;
+        }
+    }
+
+    &__map {
+        display: none;
+
+        &--small {
+            display: none;
+            padding-right: 2rem;
+            @media (min-width: map_get($MEDIA, SM)) {
+                width: 60%;
+                flex: 1 0 60%;
+                display: block;
+            }
+            @media (min-width: map_get($MEDIA, MD)) {
+                display: none;
+            }
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            display: block;
+        }
+    }
+
+    &__contacts-data {
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            width: 40%;
+            flex: 1 0 40%;
+        }
+        @media (min-width: map_get($MEDIA, MD)) {
+            width: 100%;
+            flex: 1 0 100%;
+        }
+
+    }
+
+    &__left {
+        padding: 0 1rem;
+        width: 100%;
+        @media (min-width: map_get($MEDIA, SM)) {
+            width: 55%;
+            flex: 1 0 55%;
+
+        }
+    }
+
+    &__right {
+        padding: 0 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            width: 45%;
+            flex: 1 0 45%;
+        }
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: center;
+    }
+}

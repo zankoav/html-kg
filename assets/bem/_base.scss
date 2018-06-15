@@ -4,20 +4,17 @@
 
 body {
     font-family: Avenir_Next_Regular, sans-serif;
+}
+
+.b-bgc-wrapper{
     background-color: $LIGHT;
 }
 
 .b-container {
-    margin: {
-        left: 30px;
-        right: 30px;
-    }
-
-    @media (min-width: map-get($MEDIA, SM)) {
-        margin: {
-            left: 66px;
-            right: 66px;
-        }
+    width: 100%;
+    padding:{
+        right: 2rem;
+        left: 2rem;
     }
 
     @media (min-width: map-get($MEDIA, LG)) {

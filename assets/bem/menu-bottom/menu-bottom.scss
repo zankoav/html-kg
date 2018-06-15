@@ -28,17 +28,18 @@
     &__details{
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     &__details-sunny{
         text-align: center;
         position: relative;
-        margin: 0 .5rem;
+        margin: 0 .25rem;
     }
 
     &__degrees{
         font-family: Avenir_Next_UltraLight, sans-serif;
-        font-size: 36px;
+        font-size: 27px;
         margin-right: .5rem;
 
         span{
@@ -82,6 +83,15 @@
 
 @media (min-width: 768px) {
     .menu-bottom{
+
+        &__details{
+            justify-content: initial;
+        }
+
+        &__degrees{
+            font-size: 36px;
+        }
+
         &__left{
             display: block;
         }

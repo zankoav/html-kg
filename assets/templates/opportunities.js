@@ -1,4 +1,4 @@
 import "./../bem/_base.scss";
 import "../bem/header-second/header-second";
 import "./../bem/basic-opportunities/basic-opportunities";
-import './../bem/subtitle/subtitle';
+import './../bem/header-title/header-title';

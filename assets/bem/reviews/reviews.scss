@@ -1,0 +1,37 @@
+@import "./../constants";
+
+.reviews{
+    position: relative;
+    padding:{
+        left: 5rem;
+        right: 5rem;
+        bottom: 2rem;
+    };
+
+    &__swiper{
+
+    }
+
+    &__button-prev,&__button-prev{
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__button-next{
+        background-image: url(./../../icons/right-arrow-gray.svg);
+    }
+
+    &__button-prev{
+        background-image: url(./../../icons/left-arrow-gray.svg);
+    }
+
+    &__item{
+        padding: 0 10px;
+    }
+
+    &__item-name{
+        color: $DARK;
+        margin: 1rem 0;
+    }
+}

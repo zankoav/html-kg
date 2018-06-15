@@ -1,0 +1,50 @@
+@import "./../constants";
+
+.get-test {
+    color: white;
+    overflow: hidden;
+    padding: 4rem 0;
+    font-family: Avenir_Next_Regular, sans-serif;
+    display: flex;
+    justify-content: center;
+    &__title {
+        font-size: 24px;
+        font-family: Avenir_Next_Bold, sans-serif;
+        text-shadow: 0 2px 4px 0 $DARK;
+    }
+
+    &__image {
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        max-width: initial;
+        top: 0;
+        z-index: -1;
+        filter: blur(5px);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__description {
+        max-width: 120px;
+        margin: 2.5rem 0;
+        text-align: center;
+        text-shadow: 0 2px 4px $DARK;
+
+    }
+
+    &__button {
+        @include button;
+        padding: .5rem 2.5rem;
+        font-size: 14px;
+        &::after {
+            margin-left: .5rem;
+            content: ">>";
+        }
+    }
+
+}

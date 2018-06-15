@@ -1,0 +1,32 @@
+@import "./../constants";
+
+.feature {
+    background-color: $DARK-70;
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+    padding: 1.5rem .5rem;
+
+    &__image {
+        max-width: 40%;
+    }
+
+    &__description {
+        color: $WHITE;
+        padding-top: 1rem;
+        font-size: 11px;
+
+        @media (min-width: map-get($MEDIA, SM)) {
+            font-size: 18px;
+        }
+        @media (min-width: map-get($MEDIA, MD)) {
+            font-size: 13px;
+        }
+        @media (min-width: map-get($MEDIA, LG)) {
+            font-size: 18px;
+        }
+    }
+
+}
