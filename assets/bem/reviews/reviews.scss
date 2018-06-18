@@ -1,36 +1,47 @@
 @import "./../constants";
 
-.reviews{
+.reviews {
     position: relative;
-    padding:{
-        left: 5rem;
-        right: 5rem;
-        bottom: 2rem;
-    };
 
-    &__swiper{
-
+    @media (min-width: map_get($MEDIA, SM)) {
+        padding: {
+            left: 5rem;
+            right: 5rem;
+            bottom: 2rem;
+        }
+    ;
     }
 
-    &__button-prev,&__button-prev{
-        &:focus{
+    &__button-prev, &__button-next {
+        display: none;
+        @media (min-width: map_get($MEDIA, LG)) {
+            display: block;
+        }
+        &:focus {
             outline: none;
         }
     }
 
-    &__button-next{
+    &__button-next {
+        right: 2rem;
+        top: 40%;
         background-image: url(./../../icons/right-arrow-gray.svg);
     }
 
-    &__button-prev{
+    &__button-prev {
+        left: 2rem;
+        top: 40%;
         background-image: url(./../../icons/left-arrow-gray.svg);
     }
 
-    &__item{
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: auto;
         padding: 0 10px;
     }
 
-    &__item-name{
+    &__item-name {
         color: $DARK;
         margin: 1rem 0;
     }

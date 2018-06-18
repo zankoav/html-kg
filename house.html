@@ -4,11 +4,567 @@
     <meta charset="UTF-8">
     <title>House</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="src/css/common.css">
+    <link rel="stylesheet" href="src/css/common.67588eabf3b8a9ef17d3.min.css">
+    <link rel="stylesheet" href="src/css/house.css">
+
 </head>
 <body>
-    <h1>House page</h1>
-    <script src="src/js/common.js"></script>
-    <script src="src/js/house.js"></script>
+
+<header class="header-second">
+    <nav class="menu-top b-container">
+        <div class="menu-top__left menu-main">
+            <img src="assets/icons/menu-icon.svg" class="menu-main__button" alt="menu-button">
+            <div class="menu-main__wrapper">
+                <div class="menu-main__header">
+                    <p class="menu-main__title">Меню</p>
+                    <img src="assets/icons/menu-close.svg" alt="button-close"
+                         class="menu-main__button-close">
+                </div>
+                <div class="menu-main__scroll-content">
+                    <div class="menu-main__scroll-content-wrapper">
+                        <ul class="menu-main__list menu-list">
+                            <li class="menu-list__item">
+                                <a href="/" class="menu-list__item-href">Главная</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="/houses.html" class="menu-list__item-href menu-list__item-href--active">Наши дома</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="/opportunities.html" class="menu-list__item-href">Услуги и развлечения</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="/events.html" class="menu-list__item-href">Мероприятия</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__item-href">Цены</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__item-href">Схема проезда</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="/booking.html" class="menu-list__item-href">Календари бронирования</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__item-href">Отзывы</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="online-video online-video--menu">
+                            <img src="assets/icons/online-video-gray.svg" alt="online-video" class="online-video__icon">
+                            <span class="online-video__title">смотреть ONLINE</span>
+                        </a>
+                        <div class="menu-main__currency currency">
+                            <label class="currency__label currency__label--gray">Выберите <br> валюту</label>
+                            <select name="currency" class="currency__select--hidden">
+                                <option name="by" value="1" selected>BYN</option>
+                                <option name="ru" value="31.04">RUS</option>
+                                <option name="us" value="0.5">USD</option>
+                                <option name="eu" value="0.43">EUR</option>
+                            </select>
+                            <div class="currency__view">
+                                <div data-currency="by"
+                                     class="currency__item currency__item--gray currency__item--selected">
+                                    <img src="assets/icons/by.svg" class="currency__item-flag" alt="flag">
+                                    <span class="currency__item-type">BYN</span>
+                                </div>
+                                <ul class="currency__list">
+                                    <li data-currency="by"
+                                        class="currency__item currency__item--gray currency__item--list">
+                                        <img src="assets/icons/by.svg" class="currency__item-flag" alt="flag">
+                                        <span class="currency__item-type">BYN</span>
+                                    </li>
+                                    <li data-currency="ru"
+                                        class="currency__item currency__item--gray currency__item--list">
+                                        <img src="assets/icons/ru.svg" class="currency__item-flag" alt="flag">
+                                        <span class="currency__item-type">RUS</span>
+                                    </li>
+                                    <li data-currency="us"
+                                        class="currency__item currency__item--gray currency__item--list">
+                                        <img src="assets/icons/us.svg" class="currency__item-flag" alt="flag">
+                                        <span class="currency__item-type">USD</span>
+                                    </li>
+                                    <li data-currency="eu"
+                                        class="currency__item currency__item--gray currency__item--list">
+                                        <img src="assets/icons/eu.svg" class="currency__item-flag" alt="flag">
+                                        <span class="currency__item-type">EUR</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-main__glass"></div>
+        </div>
+        <div class="menu-top__center">
+            <a href="/" class="logo">
+                <img src="assets/icons/logo.png" alt="logo" class="logo__icon">
+            </a>
+            <a href="#" class="online-video">
+                <img src="assets/icons/online-video.svg" alt="online-video" class="online-video__icon">
+                <span class="online-video__title">смотреть ONLINE</span>
+            </a>
+        </div>
+        <div class="menu-top__right contacts-menu">
+            <img src="assets/icons/contacts-icon.svg" alt="button-phone"
+                 class="contacts-menu__button contacts-menu__button--phone">
+        </div>
+    </nav>
+    <div class="main-slide">
+        <div class="main-slide__slide-img-wrapper">
+            <img class="main-slide__slide-img" src="assets/icons/banner.jpg" alt="slide">
+        </div>
+        <div class="main-slide__slide-content">
+            <h2 class="main-slide__slide-content-title">dolor sit ame</h2>
+        </div>
+    </div>
+
+    <div class="menu-bottom">
+        <div class="b-container menu-bottom__wrapper">
+            <div class="menu-bottom__left">
+                <div class="menu-bottom__currency currency">
+                    <label class="currency__label currency__label--white">Выберите <br> валюту</label>
+                    <select name="currency" class="currency__select--hidden">
+                        <option name="by" value="1" selected>BYN</option>
+                        <option name="ru" value="31.04">RUS</option>
+                        <option name="us" value="0.5">USD</option>
+                        <option name="eu" value="0.43">EUR</option>
+                    </select>
+                    <div class="currency__view">
+                        <div data-currency="by"
+                             class="currency__item currency__item--white currency__item--selected">
+                            <img src="assets/icons/by.svg" class="currency__item-flag" alt="flag">
+                            <span class="currency__item-type">BYN</span>
+                        </div>
+                        <ul class="currency__list currency__list--white">
+                            <li data-currency="by"
+                                class="currency__item currency__item--list">
+                                <img src="assets/icons/by.svg" class="currency__item-flag" alt="flag">
+                                <span class="currency__item-type">BYN</span>
+                            </li>
+                            <li data-currency="ru"
+                                class="currency__item currency__item--list">
+                                <img src="assets/icons/ru.svg" class="currency__item-flag" alt="flag">
+                                <span class="currency__item-type">RUS</span>
+                            </li>
+                            <li data-currency="us"
+                                class="currency__item currency__item--list">
+                                <img src="assets/icons/us.svg" class="currency__item-flag" alt="flag">
+                                <span class="currency__item-type">USD</span>
+                            </li>
+                            <li data-currency="eu"
+                                class="currency__item currency__item--list">
+                                <img src="assets/icons/eu.svg" class="currency__item-flag" alt="flag">
+                                <span class="currency__item-type">EUR</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-bottom__right">
+                <div class="menu-bottom__right--wrapper">
+                    <div class="menu-bottom__details">
+                        <div class="menu-bottom__details-place">
+                            <h4 class="menu-bottom__place">Красногорка</h4>
+                            <div class="menu-bottom__date"><b>22</b>марта</div>
+                        </div>
+                        <div class="menu-bottom__details-sunny">
+                            <img class="menu-bottom__sunny-icon" src="assets/icons/sunny.svg" alt="sunny">
+                            <div class="menu-bottom__sunny">Облачность</div>
+                        </div>
+                        <h4 class="menu-bottom__degrees">0<span>&deg;C</span></h4>
+                    </div>
+                    <ul class="menu-bottom__days">
+                        <li class="menu-bottom__day">
+                            <p class="menu-bottom__day-text">пт</p>
+                            <img src="assets/icons/sunny.svg" alt="" class="menu-bottom__day-icon">
+                        </li>
+                        <li class="menu-bottom__day">
+                            <p class="menu-bottom__day-text">сб</p>
+                            <img src="assets/icons/sunny.svg" alt="" class="menu-bottom__day-icon">
+                        </li>
+                        <li class="menu-bottom__day">
+                            <p class="menu-bottom__day-text">вс</p>
+                            <img src="assets/icons/sunny.svg" alt="" class="menu-bottom__day-icon">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="b-container header-title">
+    <h2 class="header-title__subtitle">У причала</h2>
+</section>
+<section class="b-bgc-wrapper">
+    <div class="b-container header-title">
+        <h2 class="header-title__subtitle">Отзывы</h2>
+    </div>
+    <div class="b-container reviews">
+        <div class="swiper-container reviews__swiper">
+            <div class="swiper-wrapper reviews__wrapper">
+                <div class="swiper-slide reviews__item">
+                    <div class="review">
+                        <div class="review__starts">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit ame Lorem ipsumdolor sit ame Lorem ipsumdolor sit ame Lorem ipsu
+                            mdolor
+                            sit ame Lorem ipsumdolor sit ame Lorem
+                        </p>
+                    </div>
+                    <p class="reviews__item-name">
+                        Олег
+                    </p>
+                </div>
+                <div class="swiper-slide reviews__item">
+                    <div class="review">
+                        <div class="review__starts">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit ame Lorem ipsumdolor sit ame Lorem ipsumdolor sit ame Lorem ipsu
+                            mdolor
+                            sit ame Lorem ipsumdolor sit ame Lorem
+                        </p>
+                    </div>
+                    <p class="reviews__item-name">
+                        Александр
+                    </p>
+                </div>
+                <div class="swiper-slide reviews__item">
+                    <div class="review">
+                        <div class="review__starts">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit ame Lorem ipsumdolor sit ame Lorem ipsumdolor sit ame Lorem ipsu
+                            mdolor
+                            sit ame Lorem ipsumdolor sit ame Lorem
+                        </p>
+                    </div>
+                    <p class="reviews__item-name">
+                        Эвелина
+                    </p>
+                </div>
+                <div class="swiper-slide reviews__item">
+                    <div class="review">
+                        <div class="review__starts">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit ame Lorem ipsumdolor sit ame Lorem ipsumdolor sit ame Lorem ipsu
+                            mdolor
+                            sit ame Lorem ipsumdolor sit ame Lorem
+                        </p>
+                    </div>
+                    <p class="reviews__item-name">
+                        Яна
+                    </p>
+                </div>
+                <div class="swiper-slide reviews__item">
+                    <div class="review">
+                        <div class="review__starts">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit ame Lorem ipsumdolor sit ame Lorem ipsumdolor sit ame Lorem ipsu
+                            mdolor
+                            sit ame Lorem ipsumdolor sit ame Lorem
+                        </p>
+                    </div>
+                    <p class="reviews__item-name">
+                        Олег
+                    </p>
+                </div>
+                <div class="swiper-slide reviews__item">
+                    <div class="review">
+                        <div class="review__starts">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit ame Lorem ipsumdolor sit ame Lorem ipsumdolor sit ame Lorem ipsu
+                            mdolor
+                            sit ame Lorem ipsumdolor sit ame Lorem
+                        </p>
+                    </div>
+                    <p class="reviews__item-name">
+                        Павел
+                    </p>
+                </div>
+                <div class="swiper-slide reviews__item">
+                    <div class="review">
+                        <div class="review__starts">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit ame Lorem ipsumdolor sit ame Lorem ipsumdolor sit ame Lorem ipsu
+                            mdolor
+                            sit ame Lorem ipsumdolor sit ame Lorem
+                        </p>
+                    </div>
+                    <p class="reviews__item-name">
+                        Олег
+                    </p>
+                </div>
+                <div class="swiper-slide reviews__item">
+                    <div class="review">
+                        <div class="review__starts">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit ame Lorem ipsumdolor sit ame Lorem ipsumdolor sit ame Lorem ipsu
+                            mdolor
+                            sit ame Lorem ipsumdolor sit ame Lorem
+                        </p>
+                    </div>
+                    <p class="reviews__item-name">
+                        Олег
+                    </p>
+                </div>
+                <div class="swiper-slide reviews__item">
+
+                    <div class="review">
+                        <div class="review__starts">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                            <img src="assets/icons/empty-star.svg" alt="star" class="review__star">
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit ame Lorem ipsumdolor sit ame Lorem ipsumdolor sit ame Lorem ipsu
+                            mdolor
+                            sit ame Lorem ipsumdolor sit ame Lorem
+                        </p>
+                    </div>
+                    <p class="reviews__item-name">
+                        Олег
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next reviews__button-next"></div>
+        <div class="swiper-button-prev reviews__button-prev"></div>
+    </div>
+</section>
+<footer class="footer-top">
+    <div class="b-container">
+        <div class="footer-top__wrapper">
+            <div class="footer-top__left footer-top__map">
+                <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa6494d334928b06f45f6384228b00db50e7b9b07328e1bb48531ad0cf46f68e8&amp;width=100%25&amp;height=35 0&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <div class="footer-top__right">
+                <div class="footer-top__contacts">
+                    <div class="footer-top__map--small">
+                        <script type="text/javascript" charset="utf-8" async
+                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa6494d334928b06f45f6384228b00db50e7b9b07328e1bb48531ad0cf46f68e8&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                    <div class="footer-top__contacts-data contacts-data">
+                        <div class="contacts-data__first">
+                            <div class="contacts-data__item">
+                                <img src="assets/icons/contacts-data/location.svg" alt="location"
+                                     class="contacts-data__item-icon">
+                                <div class="contacts-data__item-text-wrapper">
+                                    <span class="contacts-data__item-text">Как доехать?</span>
+                                </div>
+                            </div>
+                            <div class="contacts-data__item">
+                                <img src="assets/icons/contacts-data/galochka.svg" alt="galochka"
+                                     class="contacts-data__item-icon">
+                                <div class="contacts-data__item-text-wrapper">
+                                    <span class="contacts-data__item-text">Как забронировать?</span>
+                                </div>
+                            </div>
+                            <div class="contacts-data__item">
+                                <img src="assets/icons/contacts-data/support.svg" alt="support"
+                                     class="contacts-data__item-icon">
+                                <div class="contacts-data__item-text-wrapper">
+                                    <span class="contacts-data__item-text">Популярные вопросы (FAQ)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts-data__second">
+                            <div class="contacts-data__item">
+                                <img src="assets/icons/contacts-data/phone.svg" alt="phone"
+                                     class="contacts-data__item-icon contacts-data__item-icon--top">
+                                <div class="contacts-data__item-text-wrapper">
+                                    <span class="contacts-data__item-text">+375 29 320  19 19</span>
+                                    <span class="contacts-data__item-text">+375 29 320  19 19</span>
+                                    <span class="contacts-data__item-text">+375 29 320  19 19</span>
+                                </div>
+                            </div>
+                            <div class="contacts-data__item">
+                                <img src="assets/icons/contacts-data/envelope.svg" alt="envelope"
+                                     class="contacts-data__item-icon">
+                                <div class="contacts-data__item-text-wrapper">
+                                    <span class="contacts-data__item-text">info@krasnogorka.by</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top__form contacts-form">
+                    <h3 class="contacts-form__title">Оставить заявку на бронирование</h3>
+                    <form action="/" method="post" class="contacts-form__forma">
+                        <div class="contacts-form__item">
+                            <input name="name" class="contacts-form__input" type="text" placeholder="Ваше имя *"
+                                   required>
+                        </div>
+                        <div class="contacts-form__item">
+                            <input class="contacts-form__input" type="email" placeholder="e-mail *" name="email"
+                                   required>
+                        </div>
+                        <div class="contacts-form__item contacts-form__item--phone">
+                            <div class="contacts-form__select-wrapper">
+                                <select name="code" class="contacts-form__select" title="phone-code">
+                                    <option value="29">29</option>
+                                    <option value="33">33</option>
+                                    <option value="44">44</option>
+                                    <option value="25">25</option>
+                                </select>
+                            </div>
+                            <input class="contacts-form__input contacts-form__input--phone"
+                                   type="tel"
+                                   pattern="[0-9]{3}\s[0-9]{2}\s[0-9]{2}"
+                                   maxlength="9"
+                                   placeholder="XXX XX XX"
+                                   name="phone">
+                        </div>
+
+                        <div class="contacts-form__item contacts-form__item--full-width">
+                            <textarea class="contacts-form__textarea" rows="4" required placeholder="Сообщение *"
+                                      name="message"></textarea>
+                        </div>
+                        <div class="contacts-form__item contacts-form__item--full-width">
+                            <button type="submit" class="contacts-form__submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="footer-bottom">
+    <div class="b-container footer-bottom__content">
+        <div class="footer-bottom__wrapper-left footer-bottom-left">
+            <img class="footer-bottom-left-logo-img" src="assets/icons/logo.png"
+                 alt="Красногорка"
+                 title="Красногорка">
+            <div class="footer-bottom-left__socials">
+                <a href="#"><img class="footer-bottom-left-img" src="assets/icons/social/insta.svg" alt="Instagram"
+                                 title="Instagram"></a>
+                <a href="#"><img class="footer-bottom-left-img" src="assets/icons/social/fb.svg" alt="Facebook"
+                                 title="Facebook"></a>
+                <a href="#"><img class="footer-bottom-left-img" src="assets/icons/social/ok.svg" alt="Одноклассники"
+                                 title="Одноклассники"></a>
+                <a href="#"><img class="footer-bottom-left-img" src="assets/icons/social/vk.svg" alt="Вконтакте"
+                                 title="Вконтакте"></a>
+                <div class="footer-bottom-left__text">
+                    <p>База отдыха "Красногорка"</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom__wrapper-right footer-bottom-right">
+            <div class="footer-bottom-right__banks-icons">
+                <img class="footer-bottom-right-img" src="assets/icons/companies/company_mastercard.svg"
+                     alt="mastercard"
+                     title="mastercard">
+                <img class="footer-bottom-right-img" src="assets/icons/companies/company-visa.svg" alt="VISA"
+                     title="VISA">
+                <img class="footer-bottom-right-img" src="assets/icons/companies/company-belcart.svg" alt="БЕЛКАРТ"
+                     title="БЕЛКАРТ">
+                <img class="footer-bottom-right-img" src="assets/icons/companies/company-erip.svg" alt="ЕРИП"
+                     title="расчет">
+                <img class="footer-bottom-right-img" src="assets/icons/companies/company-webpay.svg" alt="WEBPAY"
+                     title="WEBPAY">
+
+
+            </div>
+            <div class="footer-bottom-right__description">
+                <p>ИП Терещенко Иван Игоревич</p>
+                <p>УНП 192706366</p>
+                <p>Республика Беларусь, Браславский </p>
+                <p>р-н., д. Красногорка</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal-contacts">
+    <div class="modal-contacts__dark-glass"></div>
+
+    <div class="modal-contacts__wrapper">
+        <img src="assets/icons/cancel.svg" alt="button-close"
+             class="modal-contacts__button">
+        <div class="modal-contacts__phones phone-list">
+            <div class="phone-item">
+                <img src="assets/icons/velcome.svg" alt="icon-velcome"
+                     class="phone-item__icon phone-item__icon--velcome">
+                <span class="phone-item__phone-number">+375 29 320 19 19</span>
+            </div>
+            <div class="phone-item">
+                <img src="assets/icons/mts.svg" alt="icon-mts" class="phone-item__icon phone-item__icon--mts">
+                <span class="phone-item__phone-number">+375 29 701 19 19</span>
+            </div>
+            <div class="phone-item">
+                <img src="assets/icons/life.svg" alt="icon-life" class="phone-item__icon phone-item__icon--life">
+                <span class="phone-item__phone-number">+375 25 920 19 19</span>
+            </div>
+
+        </div>
+
+        <p class="modal-contacts__sub-title">Viber / WhatsApp</p>
+
+        <div class="modal-contacts__email">
+            <img src="assets/icons/envelope.svg" alt="icon-envelope"
+                 class="modal-contacts__icon modal-contacts__icon--envelope">
+            <span class="modal-contacts__email-text">info@krasnagorka.by</span>
+        </div>
+        <div class="modal-contacts__working-time">
+            <img src="assets/icons/clock.svg" alt="icon-clock" class="modal-contacts__icon modal-contacts__icon--clock">
+            <span class="modal-contacts__working-time-text">8:00-23:00</span>
+        </div>
+        <div class="modal-contacts__working-time-after">
+            <span class="modal-contacts__working-time-after-text">без выходных</span>
+        </div>
+
+    </div>
+
+</div>
+<script src="src/js/common.67588eabf3b8a9ef17d3.min.js"></script>
+<script src="src/js/house.67588eabf3b8a9ef17d3.min.js"></script>
 </body>
 </html>

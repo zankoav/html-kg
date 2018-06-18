@@ -4,10 +4,16 @@
 .review{
     border-radius: 10px;
     background-color: $WHITE;
-    padding: 1rem;
+    padding:{
+        top:1.25rem;
+        right: 3.5rem;
+        bottom: 1.25rem;
+        left: 1.25rem;
+    };
     box-shadow: 0 2px 4px 0 $DARK;
     position: relative;
     color: $DARK;
+    flex: 1;
 
     &::after {
         content: '';
@@ -20,5 +26,19 @@
         left: 36px;
         z-index: 1;
         transform: scaleX(1.2) rotate(-45deg);
+    }
+
+    &__starts{
+        display: flex;
+    }
+
+    &__star{
+        width: 18px;
+        height: 18px;
+        margin-right: .5rem;
+    }
+
+    &__text{
+        margin-top: 1rem;
     }
 }

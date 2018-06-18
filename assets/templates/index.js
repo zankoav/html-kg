@@ -6,6 +6,7 @@ import './../bem/features/features';
 import './../bem/get-test/get-test';
 import './../bem/reviews/reviews';
 import './../bem/footer-top/footer-top';
+import './../bem/footer-bottom/footer-bottom';
 
 
 

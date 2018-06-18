@@ -1,15 +1,28 @@
 @import "./../constants";
 
 .basic-opportunities {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #6775A8;
-    margin: 0 auto;
-    padding: 1rem;
-    color: white;
+    margin: 0;
+    padding: 0;
+    max-width: initial;
+
     @media (min-width: map-get($MEDIA, LG)) {
-        border-radius: .4rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+        max-width: 1200px;
     }
+
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #6775A8;
+        margin: 0 auto;
+        padding: 1rem;
+        color: white;
+        @media (min-width: map-get($MEDIA, LG)) {
+            border-radius: .4rem;
+        }
+    }
+
     &__item {
         width: 50%;
         text-align: center;

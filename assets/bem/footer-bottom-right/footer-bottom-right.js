@@ -1,0 +1,1 @@
+import './footer-bottom-right.scss';

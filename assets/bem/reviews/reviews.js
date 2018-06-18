@@ -7,6 +7,9 @@ let swiper = new Swiper('.reviews__swiper', {
         nextEl: '.reviews__button-next',
         prevEl: '.reviews__button-prev',
     },
+    autoplay: {
+        delay: 4000,
+    },
     spaceBetween: 20,
     slidesPerView: 4,
     breakpoints: {
