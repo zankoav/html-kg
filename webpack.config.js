@@ -34,6 +34,8 @@ let entries = {
     index: './index.js',
     houses: './houses.js',
     booking: './booking.js',
+    prices: './prices.js',
+    reviews: './reviews.js',
     events: './events.js',
     house: './house.js',
     opportunities: './opportunities.js'
