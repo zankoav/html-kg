@@ -1,0 +1,153 @@
+@import "./../constants";
+
+.more-questions {
+    padding: 0;
+
+    @media (min-width: map_get($MEDIA, MD)) {
+        padding: 0 2rem;
+    }
+
+    &__wrapper {
+        background-color: $DARK-60;
+        padding: 2rem;
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            border-radius: .5rem;
+        }
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title{
+        font-family: Avenir_Next_Bold, sans-serif;
+        font-size: 20px;
+        color: $WHITE;
+    }
+
+    &__description{
+        font-size: 14px;
+        color: $WHITE;
+        margin-bottom: 2rem;
+    }
+
+    &__forma{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            max-width: 80%;
+        }
+    }
+
+    &__message-after{
+        width: 100%;
+        color: $WHITE;
+        margin-top: 1rem;
+        text-align: center;
+        display: none;
+    }
+
+    &__item{
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            width: 30%;
+            margin: 0 .5rem;
+        }
+
+
+        &--full-width{
+            width: 100%;
+        }
+    }
+
+    &__textarea, &__input{
+        padding: 12px;
+        flex:1;
+        font-family: Avenir_Next_Regular, sans-serif;
+    }
+
+    &__submit{
+        @include button;
+        border: none;
+        font-size: 14px;
+        text-transform: lowercase;
+        padding: .75rem 4rem;
+        width: 100%;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            margin-top: 2rem;
+            width: initial;
+        }
+
+    }
+
+    &__select-wrapper {
+        box-sizing: border-box;
+        width: 56px;
+        position: relative;
+        background-color: white;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 100%;
+            background-color: $DARK-70;
+            position: absolute;
+            top: 0;
+            right: 0;
+            pointer-events: none;
+        }
+
+        &::after {
+            content: '';
+            pointer-events: none;
+            border-style: solid;
+            border-width: 5px 5px 0 5px;
+            border-color: $DARK-70 transparent transparent transparent;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            z-index: 1;
+            margin-top: -2px;
+        }
+    }
+
+    &__select {
+        flex: 1;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-size: .75rem;
+        background: none;
+        width: 100%;
+        height: 100%;
+        padding: 12px;
+        border: none;
+        color: $DARK-70;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+}

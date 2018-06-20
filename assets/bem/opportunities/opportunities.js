@@ -35,3 +35,5 @@ $(window).on('resize', function () {
         opportunities.destroy(false, true);
     }
 });
+
+

@@ -21,3 +21,14 @@
         }
     }
 }
+
+.swiper-pagination-bullet {
+    background: $DARK-LIGHT;
+    opacity: 1;
+    &:focus{
+        outline: none;
+    }
+    &-active {
+        background: $RED;
+    }
+}

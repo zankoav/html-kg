@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="src/css/common.41c4747f703587292a11.min.css">
-    <link rel="stylesheet" href="src/css/index.41c4747f703587292a11.min.css">
+    <link rel="stylesheet" href="src/css/common.css">
+    <link rel="stylesheet" href="src/css/index.css">
 </head>
 <body>
 
@@ -236,7 +236,6 @@
         </div>
     </div>
 </header>
-
 <section class="b-bgc-wrapper">
     <div class="b-container header-title">
         <h2 class="header-title__subtitle">ВОЗМОЖНОСТИ </h2>
@@ -313,10 +312,80 @@
             <div class="swiper-pagination opportunities__pagination"></div>
         </div>
     </div>
+
+
     <div class="b-container header-title header-title--no-margin-top">
         <h2 class="header-title__subtitle">О Нас</h2>
         <span class="header-title__description">База отдыха на Браславских озерах</span>
     </div>
+
+    <div class="b-container more-questions">
+        <div class="more-questions__wrapper">
+            <div class="more-questions__inner">
+
+
+                <h3 class="more-questions__title">Остались еще вопросы?</h3>
+                <p class="more-questions__description">Обсудите все детали с манеджером</p>
+
+                <form action="/" method="post" class="more-questions__forma">
+                    <div class="more-questions__item">
+                        <input name="name" class="more-questions__input" type="text" placeholder="Ваше имя *"
+                               required>
+                    </div>
+                    <div class="more-questions__item">
+                        <input class="more-questions__input" min="1" max="100" type="number" placeholder="Кол-во человек" name="count">
+                    </div>
+                    <div class="more-questions__item more-questions__item--phone">
+                        <div class="more-questions__select-wrapper">
+                            <select name="code" class="more-questions__select" title="phone-code">
+                                <option value="29">29</option>
+                                <option value="33">33</option>
+                                <option value="44">44</option>
+                                <option value="25">25</option>
+                            </select>
+                        </div>
+                        <input class="more-questions__input more-questions__input--phone"
+                               type="tel"
+                               pattern="[0-9]{3}\s[0-9]{2}\s[0-9]{2}"
+                               maxlength="9"
+                               required
+                               placeholder="XXX XX XX"
+                               name="phone">
+                    </div>
+                    <div class="more-questions__item more-questions__item--full-width">
+                        <button type="submit" class="more-questions__submit">Отправить</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container about-us-slider">
+        <div class="swiper-wrapper about-us-slider__wrapper">
+            <div class="swiper-slide about-us-slider__slide"
+                 style="background-image:url(./assets/icons/banner.jpg)"></div>
+            <div class="swiper-slide about-us-slider__slide"
+                 style="background-image:url(./assets/icons/banner.jpg)"></div>
+            <div class="swiper-slide about-us-slider__slide"
+                 style="background-image:url(./assets/icons/banner.jpg)"></div>
+            <div class="swiper-slide about-us-slider__slide"
+                 style="background-image:url(./assets/icons/banner.jpg)"></div>
+            <div class="swiper-slide about-us-slider__slide"
+                 style="background-image:url(./assets/icons/banner.jpg)"></div>
+            <div class="swiper-slide about-us-slider__slide"
+                 style="background-image:url(./assets/icons/banner.jpg)"></div>
+        </div>
+
+        <div class="about-us-slider__container">
+            <div class="b-container about-us-slider__container-wrapper">
+                <div class="swiper-button-next about-us-slider__button-next"></div>
+                <div class="swiper-button-prev about-us-slider__button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="b-container">
         <div class="features">
             <div class="features__item">
@@ -359,7 +428,6 @@
         <a href="#" class="get-test__button">пройти тест</a>
     </div>
 </section>
-
 <section class="b-bgc-wrapper">
     <div class="b-container header-title">
         <h2 class="header-title__subtitle">Отзывы</h2>
@@ -545,7 +613,6 @@
         <div class="swiper-button-prev reviews__button-prev"></div>
     </div>
 </section>
-
 <footer class="footer-top">
     <div class="b-container">
         <div class="footer-top__wrapper">
@@ -653,13 +720,13 @@
                  title="Красногорка">
             <div class="footer-bottom-left__socials">
                 <a href="#"><img class="footer-bottom-left-img" src="assets/icons/social/insta.svg" alt="Instagram"
-                                title="Instagram"></a>
+                                 title="Instagram"></a>
                 <a href="#"><img class="footer-bottom-left-img" src="assets/icons/social/fb.svg" alt="Facebook"
-                                title="Facebook"></a>
+                                 title="Facebook"></a>
                 <a href="#"><img class="footer-bottom-left-img" src="assets/icons/social/ok.svg" alt="Одноклассники"
-                                title="Одноклассники"></a>
+                                 title="Одноклассники"></a>
                 <a href="#"><img class="footer-bottom-left-img" src="assets/icons/social/vk.svg" alt="Вконтакте"
-                                title="Вконтакте"></a>
+                                 title="Вконтакте"></a>
                 <div class="footer-bottom-left__text">
                     <p>База отдыха "Красногорка"</p>
                 </div>
@@ -733,7 +800,7 @@
 
 </div>
 
-<script src="src/js/common.41c4747f703587292a11.min.js"></script>
-<script src="src/js/index.41c4747f703587292a11.min.js"></script>
+<script src="src/js/common.js"></script>
+<script src="src/js/index.js"></script>
 </body>
 </html>

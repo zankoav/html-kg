@@ -25,13 +25,13 @@
     &__button-next {
         right: 2rem;
         top: 40%;
-        background-image: url(./../../icons/right-arrow-gray.svg);
+        background-image: url(./../../icons/right-arrow-gray.svg) !important;
     }
 
     &__button-prev {
         left: 2rem;
         top: 40%;
-        background-image: url(./../../icons/left-arrow-gray.svg);
+        background-image: url(./../../icons/left-arrow-gray.svg) !important;
     }
 
     &__item {
