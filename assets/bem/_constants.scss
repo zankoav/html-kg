@@ -29,6 +29,15 @@ $MEDIA: (
         LG:1280px
 );
 
+$opportunity--border: (
+        b-red:$RED,
+        b-green:$GREEN,
+        b-purple:#9013FE,
+        b-lime:#F8CC1C,
+        b-blue:$BLUE,
+        b-aqua: $BLUE-LIGHT
+);
+
 @mixin glass {
     display: none;
     position: fixed;

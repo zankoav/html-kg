@@ -1,0 +1,40 @@
+@import "./../constants";
+
+.big-text {
+    margin-bottom: 2rem;
+
+    &__container{
+        overflow: hidden;
+        margin-bottom: 1rem;
+        position: relative;
+
+        &--hide{
+            &::after{
+                animation: fade .4s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            height: 100px;
+            width: 100%;
+            background: linear-gradient(to top, $LIGHT, transparent);
+        }
+    }
+
+
+    p{
+        margin: .5rem 0;
+        color: $DARK;
+    }
+}
+
+@keyframes fade {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+

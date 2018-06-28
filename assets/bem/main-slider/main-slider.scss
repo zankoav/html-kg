@@ -11,7 +11,7 @@
         position: absolute;
         width: 100%;
         top:0;
-        height: 100vh;
+        height: 100%;
     }
 
     &__next-prev-wrapper{
@@ -34,7 +34,12 @@
 
     &__slide-content-title {
         font-family: Avenir_Next_Bold, sans-serif;
-        font-size: 40px;
+
+        font-size: 32px;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            font-size: 40px;
+        }
         text-align: center;
     }
 

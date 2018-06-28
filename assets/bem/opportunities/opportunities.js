@@ -1,5 +1,6 @@
 import './opportunities.scss';
 import './../opportunity/opportunity';
+
 import $ from 'jquery';
 import Swiper from 'swiper';
 

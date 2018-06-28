@@ -1,0 +1,63 @@
+@import "./../constants";
+
+.flag {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    right: 1rem;
+    width: 32px;
+    height: 48px;
+    box-shadow: .5px -0.5px 0 $DARK;
+
+
+
+    &::before,&::after{
+        content: "";
+        position: absolute;
+        width: 26px;
+        height: 20px;
+        bottom: 6px;
+        background-color: $RED;
+        box-shadow: 1px 1px 1px $DARK;
+    }
+
+    &::before {
+        left: -9px;
+        transform: rotate(-36deg);
+    }
+
+    &::after {
+        right: -9px;
+        transform: rotate(36deg);
+    }
+
+    &__inner{
+        background-color: $RED;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 2.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon{
+        width: 19px;
+        height: 19px;
+    }
+
+    @each $name, $value in $opportunity--border {
+        &--#{$name} {
+            &::before,&::after{
+                background-color: $value;
+            }
+
+            .flag__inner{
+                background-color: $value;
+            }
+        }
+    }
+}

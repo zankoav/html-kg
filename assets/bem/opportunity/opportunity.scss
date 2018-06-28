@@ -1,14 +1,5 @@
 @import "./../constants";
 
-$opportunity--border: (
-        b-red:$RED,
-        b-green:$GREEN,
-        b-purple:#9013FE,
-        b-lime:#F8CC1C,
-        b-blue:$BLUE,
-        b-aqua: $BLUE-LIGHT
-);
-
 .opportunity {
     border-radius: 6px;
     box-shadow: 0 2px 4px 0 rgba(#ABA9A9, .5);
@@ -20,9 +11,9 @@ $opportunity--border: (
     transition: all .4s;
     height: initial;
 
-
-    &__text{
-       padding: 1rem;
+    &__text {
+        position: relative;
+        padding: 1rem;
         height: 60%;
 
         @media (min-width: map_get($MEDIA, SM)) {
@@ -36,7 +27,7 @@ $opportunity--border: (
         }
     }
 
-    &__image-wrapper{
+    &__image-wrapper {
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -54,38 +45,38 @@ $opportunity--border: (
 
     }
 
-    &__image{
-        height:100%;
+    &__image {
+        height: 100%;
         width: 100%;
         max-width: initial;
         max-height: 250px;
         @media (min-width: map_get($MEDIA, SM)) {
-            max-height:initial;
+            max-height: initial;
             width: initial;
         }
     }
 
-    &__title{
+    &__title {
         font-family: Avenir_Next_Regular, sans-serif;
         font-size: 18px;
         font-weight: 900;
         color: $DARK;
         letter-spacing: 4px;
         text-transform: uppercase;
-        margin:{
+        margin: {
             top: .5rem;
             bottom: 1rem;
         }
     }
 
-    &__description{
+    &__description {
         font-size: 16px;
         color: $DARK;
         margin-bottom: 1.5rem;
 
     }
-    
-    &__image-wrapper{
+
+    &__image-wrapper {
         overflow: hidden;
         border-radius: 6px 6px 0 0;
 
@@ -118,7 +109,7 @@ $opportunity--border: (
 
     @media (min-width: map_get($MEDIA, LG)) {
         max-height: 200px;
-        &:hover{
+        &:hover {
             box-shadow: 0 4px 8px 0 rgba(#ABA9A9, 1);
             transform: scale(1.025);
         }
