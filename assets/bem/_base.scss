@@ -1,6 +1,8 @@
 @import "./../fonts/AvenirNextCyr/stylesheet";
 @import "./constants";
 @import "./reset";
+@import "./../font-awesome/fontawesome.scss";
+@import "./../font-awesome/fa-solid.scss";
 
 body {
     font-family: Avenir_Next_Regular, sans-serif;
@@ -24,4 +26,8 @@ body {
             right: auto;
         }
     }
+}
+
+.b-p-25 {
+    padding: .25rem;
 }

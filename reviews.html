@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Reviews</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="src/css/common.3c80757e5ab691d3f2d6.min.css">
+    <link rel="stylesheet" href="src/css/common.css">
     <link rel="stylesheet" href="src/css/reviews.css">
 
 </head>
@@ -45,7 +45,8 @@
                                 <a href="/booking.html" class="menu-list__item-href">Календари бронирования</a>
                             </li>
                             <li class="menu-list__item">
-                                <a href="/reviews.html" class="menu-list__item-href menu-list__item-href--active">Отзывы</a>
+                                <a href="/reviews.html"
+                                   class="menu-list__item-href menu-list__item-href--active">Отзывы</a>
                             </li>
                         </ul>
                         <a href="#" class="online-video online-video--menu">
@@ -195,12 +196,65 @@
 <section class="b-container header-title">
     <h2 class="header-title__subtitle">Оставить отзыв</h2>
 </section>
+<div class="b-container">
+    <div class="review-form review-form_form_grey">
+        <div class="review-form__content">
+            <h4 class="review-form__subtitle">
+                Понравилось у нас?
+            </h4>
+            <p class="review-form__description">
+                Дорогие гости, помогите нам стать еще лучше! Оставьте ваши отзывы о нашей базе отдыха, заполнив форму
+                ниже. Нам важно ваше мнение.
+            </p>
+            <form name="review-form" action="">
+                <div class="review-form__wrapper">
+                    <div class="review-form__item review-form__item_horizontal_item">
+                        <label for="review-form-name">Ваше имя</label>
+                        <input type="text" class="review-form__input b-p-25" id="review-form-name">
+                    </div>
+                    <div class="review-form__item review-form__item_horizontal_item">
+                        <label for="review-form-question">Когда вы отдыхали у нас?</label>
+                        <input type="text" class="review-form__input b-p-25" id="review-form-question">
+                    </div>
+                </div>
+                <div class="review-form__item">
+                    <label for="/">Оценка</label>
+                    <div class="star-rating">
+                        <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                        <label class="star-rating__ico  fas fa-star " for="star-rating-5" title="5 из 5"></label>
+                        <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                        <label class="star-rating__ico  fas fa-star " for="star-rating-4" title="4 из 5"></label>
+                        <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                        <label class="star-rating__ico  fas fa-star " for="star-rating-3" title="3 из 5"></label>
+                        <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                        <label class="star-rating__ico  fas fa-star " for="star-rating-2" title="2 из 5"></label>
+                        <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                        <label class="star-rating__ico  fas fa-star " for="star-rating-1" title="1 из 5"></label>
+                    </div>
+                </div>
+                <div class="review-form__item">
+                    <label for="review-form-review">Отзыв</label>
+                    <textarea class="review-form__textarea b-p-25" id="review-form-review" cols="90"
+                              rows="6"></textarea>
+                </div>
 
+                <div class="review-form__item review-form__item_position_center">
+                    <input type="submit" class="review-form__submit" value="отправить">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<section class="b-container header-title">
+    <h2 class="header-title__subtitle">Оставить отзыв</h2>
+</section>
 <footer class="footer-top">
     <div class="b-container">
         <div class="footer-top__wrapper">
             <div class="footer-top__left footer-top__map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6d9fd3da00f817941420b04c565ab3007a76b62a37ffcddfd62ba2bdc1385cb3&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+                <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6d9fd3da00f817941420b04c565ab3007a76b62a37ffcddfd62ba2bdc1385cb3&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
             <div class="footer-top__right">
                 <div class="footer-top__contacts">
@@ -381,7 +435,8 @@
     </div>
 
 </div>
-<script src="src/js/common.3c80757e5ab691d3f2d6.min.js"></script>
-<script src="src/js/reviews.3c80757e5ab691d3f2d6.min.js"></script>
+<script src="src/js/common.js"></script>
+<script src="src/js/reviews.js"></script>
+
 </body>
 </html>
