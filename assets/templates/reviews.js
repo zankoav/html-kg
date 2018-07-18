@@ -5,3 +5,5 @@ import './../bem/footer-top/footer-top';
 import './../bem/footer-bottom/footer-bottom';
 import './../bem/review-form/review-form';
 import './../bem/star-rating/star-rating';
+import './../bem/list-review/list-review';
+import './../bem/show-more/show-more--opportunitioes';
