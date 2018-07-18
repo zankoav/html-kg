@@ -1,0 +1,17 @@
+@import "./../constants";
+
+.list-review__item {
+  margin-bottom: 1.5rem;
+  color: $DARK-60;
+}
+
+.list-review__user {
+  margin: 1rem 0 0 1.5rem;
+
+  &-name {
+    font-weight: bold;
+    margin-right: .5rem;
+  }
+
+
+}
