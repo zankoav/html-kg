@@ -29,9 +29,19 @@
       color: $GREEN;
     }
 
+    &:after {
+      padding-left: 1rem;
+      content: '\25BA';
+    }
+
     @media (min-width: map_get($MEDIA, SM)) {
       order: -1;
       padding: 1rem 2rem;
+
+      &:after {
+        display: none;
+      }
+
     }
   }
 
