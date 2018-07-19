@@ -4,3 +4,4 @@ import './../bem/header-title/header-title';
 import './../bem/reviews/reviews';
 import './../bem/footer-top/footer-top';
 import './../bem/footer-bottom/footer-bottom';
+import './../bem/accordion-mixed/accordion-mixed';

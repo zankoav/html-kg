@@ -36,3 +36,10 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+
+.b-p-sm-0 {
+    @media (max-width: map_get($MEDIA, SM)) {
+        padding: 0;
+    }
+}
