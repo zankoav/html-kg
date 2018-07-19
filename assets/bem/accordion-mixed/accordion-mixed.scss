@@ -1,0 +1,63 @@
+@import "./../constants";
+
+.accordion-mixed {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px $DARK-50;
+  overflow: hidden;
+
+  &__tab {
+    font-size: 14px;
+    flex-shrink: 1;
+    background-color: $LIGHT;
+    color: $DARK-40;
+    cursor: pointer;
+    padding: 1rem;
+    border: none;
+    transition: .4s ease-out;
+
+    &--active {
+      background-color: $WHITE;
+      color: $GREEN;
+    }
+    &:hover {
+      color: $GREEN;
+    }
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      order: -1;
+      padding: 1rem 2rem;
+    }
+  }
+
+  &__content {
+    padding: 1.5rem;
+
+    &--none {
+      display: none;
+    }
+  }
+
+  @media (min-width: map_get($MEDIA, SM)) {
+
+    &::before {
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 52px;
+      width: 100%;
+      content: "";
+      background-color: $LIGHT;
+      z-index: -1;
+    }
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
