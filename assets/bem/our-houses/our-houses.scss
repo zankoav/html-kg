@@ -1,0 +1,165 @@
+@import "./../constants";
+@import './../../bem/apartment/apartment';
+
+.our-house {
+  margin-bottom: 1rem;
+
+  @media (min-width: map_get($MEDIA, SM)) {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 $DARK-50;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__image {
+    display: flex;
+    margin: 0 -2rem;
+    max-width: initial;
+    flex: 1 0 100%;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      margin: 0;
+      align-self: start;
+      max-width: 100%;
+      flex: 1 0 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__date {
+    margin: 1rem;
+  }
+
+  &__calendar {
+    display: none;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      display: block;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: $DARK;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: $DARK;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+
+    }
+  }
+
+  &__apartments {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      justify-content: space-between;
+      padding-left: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 100%;
+    flex: 1 0 100%;
+    margin-bottom: 1rem;
+
+    &_width_50 {
+      max-width: 50%;
+      flex: 1 0 50%;
+    }
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      max-width: 33.333%;
+      flex: 1 0 33.333%;
+      padding-right: 0;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+
+    }
+  }
+
+  &__button {
+    padding: 0 3rem;
+    margin-right: 2rem;
+    width: 260px;
+    height: 42px;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      width: 150px;
+      height: 32px;
+    }
+
+    &_style_grey {
+      display: none;
+
+      @media (min-width: map_get($MEDIA, SM)) {
+        padding: 0 2rem;
+        margin-right: 2rem;
+        display: block;
+        border: 0;
+        background-color: $DARK-LIGHT;
+        color: $DARK;
+        box-shadow: 0 2px 4px 0 $DARK-50;
+        font-size: 14px;
+        border-radius: 2px;
+      }
+    }
+
+    &_style_red {
+      border: 0;
+      background-color: $RED;
+      color: $WHITE;
+      box-shadow: 0 2px 4px 0 $DARK-50;
+      font-size: 14px;
+      border-radius: 4px;
+      padding: 0 5rem;
+      margin-right: 0;
+
+      @media (min-width: map_get($MEDIA, SM)) {
+        border-radius: 2px;
+        padding: 0 2rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+}
