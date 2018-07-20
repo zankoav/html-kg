@@ -1,44 +1,47 @@
 import './accordion-mixed.scss';
-"use strict";
+import './../house-booking/house-booking';
+import {initMediaSwiper} from './../house-media-library/house-media-library';
+import $ from "jquery";
 
-(function () {
-    var ACCORDION = 'accordion',
-        ACCORDION_ITEM = 'accordion__item',
-        ACCORDION_ITEM_BUTTON = 'accordion__item-button',
-        ACCORDION_ITEM_BUTTON_ACTIVE = 'accordion__item-button--active',
-        ACCORDION_ITEM_PANEL_SHOW = 'accordion__item-panel--show';
-    var accordions = document.getElementsByClassName(ACCORDION);
-    for (var i = 0; i < accordions.length; i++) {
-        var accordionItems = accordions[i].getElementsByClassName(ACCORDION_ITEM);
-        for (var j = 0; j < accordionItems.length; j++) {
-            var obj = accordionItems[j];
-            var accordionButton = obj.getElementsByClassName(ACCORDION_ITEM_BUTTON)[0];
-            accordionButton.addEventListener('click', activatePanel, false);
-        }
-    }
 
-    function clearAccordion(accordion) {
-        var activeButton = accordion.getElementsByClassName(ACCORDION_ITEM_BUTTON_ACTIVE)[0];
-        var activePanel = accordion.getElementsByClassName(ACCORDION_ITEM_PANEL_SHOW)[0];
-        if (activeButton) {
-            activeButton.classList.remove(ACCORDION_ITEM_BUTTON_ACTIVE);
-        }
-        if (activePanel) {
-            activePanel.removeAttribute('style');
-            activePanel.classList.remove(ACCORDION_ITEM_PANEL_SHOW);
-        }
-    }
+$("[data-mixed-tab]").click(function () {
 
-    function activatePanel() {
-        clearAccordion(this.parentNode.parentNode);
-        this.classList.toggle(ACCORDION_ITEM_BUTTON_ACTIVE);
-        var panel = this.nextElementSibling;
-        panel.classList.toggle(ACCORDION_ITEM_PANEL_SHOW);
-        panel.style.height = 'initial';
-        var panelHeights = panel.offsetHeight;
-        panel.removeAttribute('style');
-        setTimeout(function () {
-            panel.style.height = panelHeights + 'px';
-        }, 4);
+    let idTab = $(this).data("mixed-tab");
+
+    if ($(window).width() >= 768) {
+        if($(this).hasClass('accordion-mixed__tab--active')){
+            return;
+        }
+        $("[data-mixed-tab]").removeClass('accordion-mixed__tab--active');
+        $(`[data-mixed-tab=${idTab}]`).addClass('accordion-mixed__tab--active');
+        $("[data-mixed-conent]").removeClass('accordion-mixed__content--active');
+        $(`[data-mixed-conent=${idTab}]`).addClass('accordion-mixed__content--active');
+    } else {
+
+
+
+        if($(this).hasClass('accordion-mixed__tab--active')){
+            $(this).removeClass('accordion-mixed__tab--active');
+            $(".accordion-mixed__content--active").slideUp(function () {
+                $(this).removeClass("accordion-mixed__content--active").removeAttr('style');
+            });
+        }else{
+
+            $("[data-mixed-tab]").removeClass('accordion-mixed__tab--active');
+            $(`[data-mixed-tab=${idTab}]`).addClass('accordion-mixed__tab--active');
+
+            $(".accordion-mixed__content--active").slideUp(function () {
+                $(this).removeClass("accordion-mixed__content--active").removeAttr('style');
+            });
+
+            $(`[data-mixed-conent=${idTab}]`).slideDown(function () {
+                if(idTab === 2){
+                    initMediaSwiper();
+                }
+                $(this).addClass("accordion-mixed__content--active").removeAttr('style');
+            });
+        }
+
     }
-}());
+});
+
