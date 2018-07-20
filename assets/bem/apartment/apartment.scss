@@ -6,6 +6,7 @@
     &_width_50 {
         max-width: 50%;
         flex: 1 0 50%;
+    }
 
     @media (min-width: map_get($MEDIA, SM)) {
       max-width: 100%;
@@ -49,6 +50,12 @@
 
         @media (min-width: map_get($MEDIA, MD)) {
             font-size: 14px;
+        }
+
+        &_font_11{
+            @media (max-width: map_get($MEDIA, MD)) {
+                font-size: 11px;
+            }
         }
     }
 

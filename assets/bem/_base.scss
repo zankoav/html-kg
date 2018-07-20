@@ -39,7 +39,7 @@ body {
 
 
 .b-p-sm-0 {
-    @media (max-width: map_get($MEDIA, SM)) {
+    @media (max-width: map_get($MEDIA, SM) - 1px) {
         padding: 0;
     }
 }
@@ -52,9 +52,21 @@ body {
     margin-top: 3rem;
 }
 
+.b-ml-2 {
+    margin-left: 2rem;
+}
+
 .b-py-2{
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.b-pb-2{
+    padding-bottom: 2rem;
+}
+
+.b-pb-1{
+    padding-bottom: 1rem;
 }
 
 .b-pt-3{
