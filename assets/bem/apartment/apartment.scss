@@ -1,0 +1,46 @@
+@import "./../constants";
+
+.apartment {
+  margin-bottom: 8px;
+
+  &_width_50 {
+    max-width: 50%;
+    flex: 1 0 50%;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      max-width: 100%;
+      flex: 1 0 100%;
+    }
+  }
+
+  &__header {
+    display: flex;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-size: 14px;
+    color: $DARK;
+  }
+
+  &__item {
+    list-style: disc;
+    color: $DARK;
+    font-size: 12px;
+    margin-left: 40px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      flex-direction: column;
+    }
+  }
+}

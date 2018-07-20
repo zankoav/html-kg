@@ -5,3 +5,5 @@ import './../bem/reviews/reviews';
 import './../bem/footer-top/footer-top';
 import './../bem/footer-bottom/footer-bottom';
 import './../bem/accordion-mixed/accordion-mixed';
+import '../bem/house-description/house-description';
+import './../bem/apartment/apartment';

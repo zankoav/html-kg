@@ -1,0 +1,80 @@
+@import "./../constants";
+
+.house-description {
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      flex-direction: row;
+    }
+  }
+
+  &__image {
+    margin: -1.5rem;
+    max-width: initial;
+    flex: 1 0 100%;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      margin: 0;
+      align-self: start;
+      width: 240px;
+      flex: 1 0 240px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 2rem;
+    color: $DARK;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: $DARK;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      padding-left: 2rem;
+
+      &_display_none {
+        display: none;
+      }
+    }
+  }
+
+  &__apartments {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    padding-right: 1rem;
+    max-width: 50%;
+    flex: 1 0 50%;
+    margin-bottom: 1rem;
+
+    &_width_100 {
+      max-width: 100%;
+      flex: 1 0 100%;
+      padding-right: 0;
+    }
+
+    @media (min-width: map_get($MEDIA, SM)) {
+      max-width: 20%;
+      flex: 1 0 20%;
+      padding-right: 0;
+
+    }
+  }
+}
