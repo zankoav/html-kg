@@ -5,3 +5,5 @@ import './../bem/header-title/header-title';
 
 import './../bem/footer-top/footer-top';
 import './../bem/footer-bottom/footer-bottom';
+import './../bem/our-houses/our-houses';
+

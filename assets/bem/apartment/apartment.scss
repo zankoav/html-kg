@@ -7,10 +7,9 @@
         max-width: 50%;
         flex: 1 0 50%;
 
-        @media (min-width: map_get($MEDIA, SM)) {
-            max-width: 100%;
-            flex: 1 0 100%;
-        }
+    @media (min-width: map_get($MEDIA, SM)) {
+      max-width: 100%;
+      flex: 1 0 100%;
     }
 
     &__header {
