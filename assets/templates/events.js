@@ -4,6 +4,7 @@ import './../bem/header-title/header-title';
 import './../bem/opportunities/opportunities';
 import './../bem/seson-slider/seson-slider';
 import './../bem/big-text/big-text';
+import './../bem/last-events/last-events';
 
 import './../bem/footer-top/footer-top';
 import './../bem/footer-bottom/footer-bottom';
