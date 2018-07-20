@@ -1,0 +1,71 @@
+@import "./../constants";
+
+.last-event {
+
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+        flex-direction: row;
+    }
+
+    &__icon {
+        border-radius: 8px;
+        width: 100%;
+        flex: 1 0 100%;
+        align-self: center;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            max-width: 100px;
+            flex: 1 0 100px;
+            align-self: flex-start;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            max-width: 135px;
+            flex: 1 0 135px;
+        }
+    }
+
+    &__content {
+        margin-top: 1.25rem;
+        color: $DARK;
+        flex: 1;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            margin-top: .5rem;
+            margin-left: .75rem;
+        }
+    }
+
+    &__title{
+        font-size: 18px;
+        line-height: 16px;
+        font-weight: bold;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            font-size: 16px;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            font-size: 18px;
+        }
+    }
+
+    &__description{
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: .75rem;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            margin-top: .5rem;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            font-size: 16px;
+        }
+    }
+
+}

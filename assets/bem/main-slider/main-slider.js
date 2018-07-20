@@ -4,11 +4,11 @@ import Swiper from 'swiper';
 let swiper = new Swiper('.main-slider', {
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.main-slider__button-next',
+        prevEl: '.main-slider__button-prev',
     },
     pagination: {
-        el: '.swiper-pagination',
+        el: '.main-slider__pagination',
         clickable: false,
     }
 });

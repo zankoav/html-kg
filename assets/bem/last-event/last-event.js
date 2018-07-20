@@ -1,0 +1,1 @@
+import './last-event.scss';
