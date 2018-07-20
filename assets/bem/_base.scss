@@ -43,3 +43,32 @@ body {
         padding: 0;
     }
 }
+
+.b-mb-2 {
+    margin-bottom: 2rem;
+}
+
+.b-mt-3 {
+    margin-top: 3rem;
+}
+
+.b-py-2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.b-pt-3{
+    padding-top: 3rem;
+}
+
+.b-d-block-md{
+    display: none;
+    @media (min-width: map_get($MEDIA, MD)) {
+        display: block;
+    }
+}
+
+.b-light-line{
+    height: 2px;
+    background-color: $WHITE;
+}

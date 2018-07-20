@@ -1,0 +1,44 @@
+@import "./../constants";
+
+.last-events {
+    position: relative;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+        padding: {
+            left: 3.5rem;
+            right: 3.5rem;
+        };
+    }
+
+    &__button-prev, &__button-next {
+        display: block;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__button-next {
+        right: 1rem;
+        top: 40%;
+        background-image: url(./../../icons/right-arrow-gray.svg) !important;
+    }
+
+    &__button-prev {
+        left: 1rem;
+        top: 40%;
+        background-image: url(./../../icons/left-arrow-gray.svg) !important;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 0 1rem;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            padding: 0;
+        }
+
+    }
+}
