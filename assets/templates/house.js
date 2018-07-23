@@ -8,3 +8,4 @@ import './../bem/accordion-mixed/accordion-mixed';
 import './../bem/house-description/house-description';
 import './../bem/house-media-library/house-media-library';
 import './../bem/apartment/apartment';
+import './../bem/map-zoom/map-zoom';

@@ -2,6 +2,7 @@ import './accordion-mixed.scss';
 import './../house-booking/house-booking';
 import {initMediaSwiper} from './../house-media-library/house-media-library';
 import $ from "jquery";
+import Swiper from "swiper";
 
 
 $("[data-mixed-tab]").click(function () {

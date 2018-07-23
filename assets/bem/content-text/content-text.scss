@@ -1,0 +1,15 @@
+@import "./../constants";
+
+.content-text {
+    color: $DARK;
+    margin-bottom: 2.5rem;
+
+    p,h1,h2,h3,h4,h5,h6,ul{
+        margin-bottom: 1rem;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        font-weight: bold;
+    }
+
+}
