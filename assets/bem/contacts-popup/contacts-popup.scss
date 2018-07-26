@@ -1,0 +1,62 @@
+@import "./../constants";
+
+.contacts-popup {
+    position: absolute;
+    display: none;
+    top: 64px;
+    right: 0;
+    width: $MAX-CONTACTS-WINDOW;
+    max-width: initial;
+
+    @media (min-width: map_get($MEDIA, LG)) {
+        top: 44px;
+    }
+
+    &__wrapper {
+        background-color: $WHITE;
+        color: $DARK;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px $DARK-90;
+        position: relative;
+        padding: 1.25rem;
+        line-height: 1;
+        font-size: 18px;
+        text-align: center;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            padding: 1.5rem;
+        }
+    }
+
+    &__sub-title {
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+    }
+
+    &__email {
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: {
+            top: 1px solid $DARK;
+            bottom: 1px solid $DARK;
+        }
+    }
+
+    &__working-time {
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__working-time-after {
+        margin-top: .25rem;
+    }
+
+    &__icon {
+        width: 20px;
+        margin-right: 6px;
+    }
+}

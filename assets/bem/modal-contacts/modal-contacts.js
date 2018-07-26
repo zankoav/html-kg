@@ -1,5 +1,4 @@
 import './modal-contacts.scss';
-import './../phone-item/phone-item';
 import $ from 'jquery';
 
 $('.contacts-menu__button--phone').click(function (event) {

@@ -3,6 +3,7 @@
 .contacts-menu {
 
     line-height: 0;
+    position: relative;
 
     &__container {
         display: none;
@@ -12,6 +13,16 @@
         width: $SIZE-BUTTON;
         height: $SIZE-BUTTON;
         cursor: pointer;
+        display: inline-block;
+        animation: contact-button 2s linear infinite;
+        transition: all .4s;
+        border-radius: 50%;
+
+        &:hover, &_active{
+            background-color: rgba($RED,.5);
+            animation-play-state: paused;
+        }
+
     }
 }
 @media (min-width: 1024px) {
@@ -30,5 +41,18 @@
             width: $SIZE-BUTTON-S;
             height: $SIZE-BUTTON-S;
         }
+    }
+}
+
+@keyframes contact-button {
+    0%,40%,50%,60%,100%{
+        transform: scale(1) rotate(0deg);
+    }
+    45%{
+        transform: scale(1.15) rotate(-20deg);
+
+    }
+    55%{
+        transform: scale(1.15) rotate(-20deg);
     }
 }

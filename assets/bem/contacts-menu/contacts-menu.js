@@ -1,4 +1,5 @@
 import './contacts-menu.scss';
-import './../modal-contacts/modal-contacts';
+import './../contacts-popup/contacts-popup';
+import './../phone-item/phone-item';
 
 

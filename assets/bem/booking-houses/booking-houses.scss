@@ -1,0 +1,184 @@
+@import "./../constants";
+
+.booking-houses {
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $WHITE;
+        padding: 1.5rem 0;
+        overflow: hidden;
+        box-shadow: 0 2px 4px 0 $DARK-50;
+        margin-bottom: .25rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
+        max-width: initial;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            border-radius: .5rem;
+            margin-left: initial;
+            margin-right: initial;
+            max-width: 100%;
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            padding: 2.5rem;
+            border-radius: 0;
+            margin-left: -2rem;
+            margin-right: -2rem;
+            max-width: initial;
+        }
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            border-radius: .5rem;
+            margin-left: initial;
+            margin-right: initial;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex: 1 0 100%;
+        justify-content: center;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            padding: 2rem;
+            justify-content: space-between;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $DARK;
+        letter-spacing: 4px;
+        padding: 1rem 0;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            padding: 0;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            flex: 1 0 230px;
+            max-width: 230px;
+        }
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            flex: 1 0 280px;
+            max-width: 280px;
+        }
+    }
+
+    &__calendar-statuses {
+        display: none;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            display: flex;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            margin-left: 2.5rem;
+            flex: 1;
+        }
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            margin-left: 3rem;
+        }
+    }
+
+    &__calendar-status {
+        color: $DARK-70;
+        font-size: 12px;
+        margin: 0 .75rem;
+
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-right: .5rem;
+        }
+
+        &_type {
+            &_get {
+                &::before {
+                    background-color: $BLUE-10;
+                }
+            }
+
+            &_prebuy {
+                &::before {
+                    background-color: $ORANGE-10;
+                }
+            }
+
+            &_buyed {
+                &::before {
+                    background-color: $RED-10;
+                }
+            }
+        }
+    }
+
+    &__image-wrapper {
+
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        order: -1;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            width: 100%;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            order: 0;
+            flex: 1 0 230px;
+            max-width: 230px;
+        }
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            flex: 1 0 280px;
+            max-width: 280px;
+        }
+
+    }
+
+    &__image {
+        max-width: initial;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            min-width: 100%;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            min-width: auto;
+        }
+    }
+
+    &__calendars {
+        flex: 1;
+        background-color: yellow;
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            margin-left: 3rem;
+
+        }
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            margin-left: 3.5rem;
+        }
+    }
+
+}
