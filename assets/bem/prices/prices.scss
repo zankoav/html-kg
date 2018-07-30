@@ -1,0 +1,155 @@
+@import "./../constants";
+
+.prices {
+    padding: 1rem 1.5rem;
+    background-color: $WHITE;
+    box-shadow: 0 2px 4px $DARK-50;
+    max-width: initial;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: map_get($MEDIA, SM)) {
+        padding: 1rem 2rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+
+    @media (min-width: map_get($MEDIA, LG)) {
+        max-width: 100%;
+        margin-left: initial;
+        margin-right: initial;
+    }
+
+    &__select{
+        display: flex;
+        margin: 1rem 0;
+        justify-content: center;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            display: none;
+        }
+    }
+
+    &__orderby{
+        background: $WHITE url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+        background-size: 8px 10px;
+        padding: .5rem 1rem;
+        color: $DARK;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__table {
+        width: 100%;
+        color: $DARK;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    &__header {
+        display: none;
+        @media (min-width: map_get($MEDIA, SM)) {
+            display: table-header-group;
+        }
+    }
+
+    &__row {
+        border-bottom: 1px solid $DARK-LIGHT;
+    }
+
+    &__name {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: bold;
+        padding: .5rem .25rem;
+        text-align: left;
+
+        &_size_50per{
+            width: 50%;
+        }
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            text-align: center;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            font-size: 14px;
+            letter-spacing: 3px;
+
+        }
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            font-size: 18px;
+            letter-spacing: 4px;
+        }
+    }
+
+    &__value {
+        font-size: 11px;
+        border-left: 1px solid $DARK-LIGHT;
+        display: none;
+        padding: 0 .25rem;
+
+        &_active{
+            display: table-cell;
+        }
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            display: table-cell;
+        }
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            font-size: 14px;
+
+        }
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            font-size: 16px;
+        }
+    }
+
+    &__th {
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: .5rem 1rem;
+
+        @media (min-width: map_get($MEDIA, MD)) {
+            font-size: 14px;
+        }
+
+        @media (min-width: map_get($MEDIA, LG)) {
+            font-size: 16px;
+        }
+    }
+
+    &__download{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: map_get($MEDIA, SM)) {
+            flex-direction: row;
+        }
+    }
+
+    &__button{
+        margin: 1rem;
+        padding: .75rem;
+        text-align: center;
+        width: 300px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 18px;
+        border: 1px solid $DARK-40;
+        color: $DARK;
+        background-color: $WHITE;
+        border-radius: .25rem;
+
+    }
+}

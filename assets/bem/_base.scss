@@ -15,9 +15,17 @@ body {
 .b-container {
     width: 100%;
     padding:{
-        right: 2rem;
-        left: 2rem;
+        right: 1.5rem;
+        left: 1.5rem;
     }
+
+    @media (min-width: map-get($MEDIA, SM)) {
+        padding:{
+            right: 2rem;
+            left: 2rem;
+        }
+    }
+
 
     @media (min-width: map-get($MEDIA, LG)) {
         max-width: $MAX-WIDTH;
